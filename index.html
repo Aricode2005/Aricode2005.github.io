@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aritra Dutta — Backend &amp; Agentic AI Engineer</title>
+<meta name="description" content="Aritra Dutta builds event-driven backends and agentic AI systems for finance. CSE at Jadavpur University. LeetCode Guardian, top 1.16% globally.">
+<meta name="author" content="Aritra Dutta">
+<meta property="og:title" content="Aritra Dutta — Backend &amp; Agentic AI Engineer">
+<meta property="og:description" content="Event-driven backends and agentic AI systems for finance. CSE at Jadavpur University.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aricode2005.github.io/profile.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231a2b24'/><text y='74' x='50' text-anchor='middle' font-size='68' font-family='Georgia,serif' fill='%23e8ede7'>A</text></svg>">
+<style>
+:root{
+  --paper:#F5F7F3;
+  --band:#E4EDE2;
+  --ink:#1A2B24;
+  --ink-soft:#4C5F56;
+  --rule:#C2D0C2;
+  --rule-soft:#DCE4D9;
+  --red:#A63B2A;
+  --blue:#2B4A73;
+  --maxw:74rem;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#121714;
+    --band:#1A211C;
+    --ink:#E9EEE7;
+    --ink-soft:#9AA79D;
+    --rule:#2E3A32;
+    --rule-soft:#232B26;
+    --red:#E58270;
+    --blue:#9FBDE4;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size:clamp(15px,.55vw + 13.6px,17px);
+  line-height:1.65;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.25rem,4vw,3rem)}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:var(--rule)}
+a:hover{text-decoration-color:var(--red)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:Newsreader,Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.01em;margin:0}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule);position:sticky;top:0;background:var(--paper);z-index:5}
+.masthead .wrap{display:flex;gap:1rem;align-items:baseline;justify-content:space-between;padding-top:.85rem;padding-bottom:.85rem;flex-wrap:wrap}
+.mark{font-family:Newsreader,Georgia,serif;font-size:1.12rem}
+.masthead nav{display:flex;gap:1.35rem;font-size:.87rem;color:var(--ink-soft)}
+.masthead nav a{text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px}
+.masthead nav a:hover{border-bottom-color:var(--red);color:var(--ink)}
+
+/* ---------- hero ---------- */
+.hero{padding:clamp(3.5rem,9vw,7rem) 0 clamp(2.5rem,6vw,4.5rem)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(19rem,.85fr);gap:clamp(2rem,5vw,4.5rem);align-items:end}
+h1{font-size:clamp(2.9rem,7.4vw,5.4rem);line-height:.98;letter-spacing:-.025em}
+h1 .given{display:block}
+h1 .family{display:block;font-style:italic;font-weight:300}
+.standfirst{margin:1.6rem 0 0;max-width:34ch;font-size:clamp(1.02rem,.5vw + .9rem,1.22rem);line-height:1.5;color:var(--ink-soft)}
+.standfirst strong{font-weight:500;color:var(--ink)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:2rem}
+.btn{display:inline-block;padding:.55rem 1.05rem;border:1px solid var(--ink);text-decoration:none;font-size:.9rem;line-height:1.4;background:transparent}
+.btn:hover{background:var(--ink);color:var(--paper)}
+.btn-quiet{border-color:var(--rule);color:var(--ink-soft)}
+.btn-quiet:hover{background:transparent;border-color:var(--ink);color:var(--ink)}
+
+/* ---------- ledger of figures ---------- */
+.ledger{border-top:1.5px solid var(--ink);margin:0}
+.ledger .row{display:flex;align-items:baseline;gap:.5rem;padding:.5rem .6rem;border-bottom:1px solid var(--rule-soft)}
+.ledger .row:nth-child(odd){background:var(--band)}
+.ledger dt{flex:0 1 auto;font-size:.88rem;color:var(--ink-soft)}
+.ledger .leader{flex:1 1 auto;border-bottom:1px dotted var(--rule);transform:translateY(-.25em);min-width:1rem}
+.ledger dd{margin:0;font-size:.95rem;font-weight:500;white-space:nowrap}
+.ledger .figure{font-family:Newsreader,Georgia,serif;font-size:1.15rem}
+
+/* ---------- portrait ---------- */
+.portrait{margin:0 0 1.4rem;border:1px solid var(--rule);background:var(--band);padding:.4rem}
+.portrait img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center 20%}
+
+/* ---------- sections ---------- */
+section{padding:clamp(3rem,7vw,5.5rem) 0;border-top:1px solid var(--rule)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem}
+h2{font-size:clamp(1.6rem,2.6vw,2.15rem)}
+.sec-note{font-size:.88rem;color:var(--ink-soft);max-width:38ch}
+
+/* ---------- entries ---------- */
+.entry{display:grid;grid-template-columns:13.5rem minmax(0,1fr);gap:clamp(1.25rem,3vw,3rem);padding:2rem 0;border-top:1px solid var(--rule-soft)}
+.entry:first-of-type{border-top:0;padding-top:0}
+.entry-meta{font-size:.85rem;color:var(--ink-soft);line-height:1.55}
+.entry-meta .when{display:block;color:var(--ink)}
+.stack{margin:.85rem 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:.3rem .5rem}
+.stack li{font-size:.78rem;padding:.12rem .45rem;border:1px solid var(--rule);color:var(--ink-soft)}
+h3{font-size:clamp(1.35rem,2.1vw,1.7rem);line-height:1.2}
+h3 a{text-decoration-color:var(--rule)}
+.tagline{margin:.45rem 0 1.1rem;color:var(--ink-soft);max-width:60ch}
+.points{margin:0;padding:0;list-style:none;max-width:64ch}
+.points li{padding:.5rem 0 .5rem 1.4rem;position:relative;border-top:1px solid var(--rule-soft)}
+.points li:first-child{border-top:0}
+.points li::before{content:"";position:absolute;left:.25rem;top:1.15em;width:.45rem;height:1px;background:var(--red)}
+.repo{display:inline-block;margin-top:1.1rem;font-size:.9rem;color:var(--blue)}
+
+/* ---------- toolkit ---------- */
+.kit{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:0;border-top:1.5px solid var(--ink)}
+.kit>div{padding:1.1rem 1rem;border-bottom:1px solid var(--rule-soft)}
+.kit>div:nth-child(4n+1),.kit>div:nth-child(4n+2){background:var(--band)}
+.kit h4{margin:0 0 .35rem;font-size:.82rem;font-weight:600;color:var(--ink-soft)}
+.kit p{margin:0;font-size:.95rem;line-height:1.5}
+
+/* ---------- record ---------- */
+.record{border-top:1.5px solid var(--ink)}
+.record .row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1rem;align-items:baseline;padding:.7rem .6rem;border-bottom:1px solid var(--rule-soft)}
+.record .row:nth-child(odd){background:var(--band)}
+.record .what{font-size:.95rem}
+.record .what span{display:block;font-size:.83rem;color:var(--ink-soft)}
+.record .val{font-family:Newsreader,Georgia,serif;font-size:1.18rem;white-space:nowrap;text-align:right}
+
+/* ---------- close ---------- */
+.close{border-top:1px solid var(--rule);padding:clamp(3rem,7vw,5rem) 0 clamp(2rem,4vw,3rem)}
+.close p{font-family:Newsreader,Georgia,serif;font-size:clamp(1.4rem,3.4vw,2.1rem);line-height:1.3;max-width:24ch;margin:0 0 1.75rem}
+.contact{display:flex;flex-wrap:wrap;gap:1.75rem;font-size:.95rem}
+.contact a{text-decoration-color:var(--rule)}
+footer{border-top:1px solid var(--rule-soft);padding:1.25rem 0 2.5rem;font-size:.82rem;color:var(--ink-soft);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+
+/* ---------- one page-load moment ---------- */
+.reveal{opacity:0;animation:settle .7s cubic-bezier(.2,.7,.3,1) forwards}
+.reveal:nth-child(2){animation-delay:.09s}
+.hero-side{opacity:0;animation:settle .7s cubic-bezier(.2,.7,.3,1) .2s forwards}
+@keyframes settle{from{opacity:0;transform:translateY(.5rem)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .reveal,.hero-side{animation:none;opacity:1}
+  *{transition:none!important}
+}
+
+/* ---------- narrow ---------- */
+@media (max-width:52rem){
+  .hero-grid{grid-template-columns:1fr;align-items:start}
+  .portrait{max-width:13rem}
+  .entry{grid-template-columns:1fr;gap:1rem}
+  .masthead{position:static}
+  .masthead nav{gap:1rem;font-size:.82rem}
+  .record .row{grid-template-columns:1fr auto}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <span class="mark">Aritra Dutta</span>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#record">Record</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <h1 class="reveal"><span class="given">Aritra</span><span class="family">Dutta</span></h1>
+        <p class="standfirst reveal">I build <strong>event-driven backends</strong> and <strong>agentic AI systems</strong> for finance — ledgers that stay correct under concurrent load, and agents that can safely act on them.</p>
+        <div class="hero-actions reveal">
+          <a class="btn" href="#work">See the work</a>
+          <a class="btn btn-quiet" href="mailto:aritraduttauttarpara@gmail.com">Email me</a>
+          <a class="btn btn-quiet" href="AritraDutta-Resume.pdf">Resume (PDF)</a>
+        </div>
+      </div>
+      <div class="hero-side">
+      <figure class="portrait">
+        <img src="profile.jpg" width="640" height="800" alt="Portrait of Aritra Dutta" onerror="this.closest('.portrait').style.display='none'">
+      </figure>
+      <dl class="ledger">
+        <div class="row">
+          <dt>Jadavpur University, CSE</dt><span class="leader"></span><dd class="figure">9.51</dd>
+        </div>
+        <div class="row">
+          <dt>LeetCode, global percentile</dt><span class="leader"></span><dd class="figure">1.16%</dd>
+        </div>
+        <div class="row">
+          <dt>Codeforces</dt><span class="leader"></span><dd>Specialist</dd>
+        </div>
+        <div class="row">
+          <dt>Meta Hacker Cup 2025</dt><span class="leader"></span><dd>Round 2</dd>
+        </div>
+        <div class="row">
+          <dt>Based in</dt><span class="leader"></span><dd>Kolkata, India</dd>
+        </div>
+      </dl>
+      </div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Selected work</h2>
+        <p class="sec-note">Three systems, each built end to end. Source is on GitHub.</p>
+      </div>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="when">July 2026</span>
+          Enterprise FinTech API
+          <ul class="stack">
+            <li>Node.js</li><li>PostgreSQL</li><li>Apache Kafka</li><li>Redis</li><li>Hugging Face</li>
+          </ul>
+        </div>
+        <div>
+          <h3><a href="https://github.com/Aricode2005/NexusPay-Engine">NexusPay Engine</a></h3>
+          <p class="tagline">A digital wallet backend that can take money from one account to another without ever losing track of it.</p>
+          <ul class="points">
+            <li>Kafka decouples ledger writes from notifications, cutting API response latency by an estimated 40%.</li>
+            <li>A two-step intent/execute flow with PostgreSQL row-level locks and UUID ordering keeps transactions ACID-compliant, with no deadlocks and no double-spends.</li>
+            <li>Redis rate limiting, idempotency keys and stateless JWT auth block brute-force MPIN attempts and duplicate retries.</li>
+            <li>An agentic fraud detector watches transaction velocity and freezes suspicious accounts on its own; a RAG assistant answers questions about past transactions in plain English.</li>
+          </ul>
+          <a class="repo" href="https://github.com/Aricode2005/NexusPay-Engine">Read the code on GitHub</a>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="when">September 2026</span>
+          Agentic AI FinTech server
+          <ul class="stack">
+            <li>Python 3.13</li><li>FastMCP</li><li>aiosqlite</li><li>SQLite</li>
+          </ul>
+        </div>
+        <div>
+          <h3><a href="https://github.com/Aricode2005/expense-tracker-mcp">ExpenseIQ</a></h3>
+          <p class="tagline">An expense tracker an AI model can actually operate, built on the Model Context Protocol.</p>
+          <ul class="points">
+            <li>Exposes 15 financial tools — records, budgets, analytics — safely to LLMs such as Claude.</li>
+            <li>Fully asynchronous on aiosqlite for non-blocking I/O, deployed to a remote cloud environment over Streamable HTTP.</li>
+            <li>Workflows are fault tolerant: the model validates its own inputs, corrects miscategorised entries, and reads live dashboards through MCP Resources.</li>
+          </ul>
+          <a class="repo" href="https://github.com/Aricode2005/expense-tracker-mcp">Read the code on GitHub</a>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry-meta">
+          <span class="when">March 2026</span>
+          Algorithmic trading backtester
+          <ul class="stack">
+            <li>C++17</li><li>OOP</li>
+          </ul>
+        </div>
+        <div>
+          <h3><a href="https://github.com/Aricode2005/QuantStream-Engine">QuantStream Engine</a></h3>
+          <p class="tagline">A backtesting engine for trading strategies, written for speed and for swapping ideas in and out quickly.</p>
+          <ul class="points">
+            <li>Polymorphic strategy interface runs 5+ statistical strategies — RSI, Bollinger Bands, Z-Score — without touching the execution core.</li>
+            <li>Shared risk-management modules cut duplication across strategies.</li>
+            <li>Post-trade diagnostics include the Hurst Exponent for detecting which market regime a strategy is trading into.</li>
+          </ul>
+          <a class="repo" href="https://github.com/Aricode2005/QuantStream-Engine">Read the code on GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="toolkit">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Toolkit</h2>
+        <p class="sec-note">What I reach for, grouped by the job it does.</p>
+      </div>
+      <div class="kit">
+        <div><h4>Languages</h4><p>C++, Python, Java, C, JavaScript</p></div>
+        <div><h4>Backend</h4><p>Node.js, Express, REST APIs, JWT auth</p></div>
+        <div><h4>Data</h4><p>PostgreSQL, MySQL, MongoDB, SQLite, Redis</p></div>
+        <div><h4>Messaging &amp; infra</h4><p>Apache Kafka, Docker, Git, GitHub</p></div>
+        <div><h4>Agentic AI</h4><p>LangChain, LangGraph, LangSmith, Model Context Protocol, RAG</p></div>
+        <div><h4>Frontend</h4><p>React</p></div>
+        <div><h4>Core CS</h4><p>Data structures &amp; algorithms, operating systems, computer networks, DBMS, OOP, computer organisation</p></div>
+        <div><h4>Currently learning</h4><p>Distributed systems, cloud deployment, voice and real-time agents</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="record">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Record</h2>
+        <p class="sec-note">Competitive programming keeps the fundamentals sharp; the entrance ranks are where it started.</p>
+      </div>
+      <div class="record">
+        <div class="row"><div class="what">LeetCode <span>Guardian · max rating 2155 · top 1.16% globally · aricode25</span></div><div class="val">Guardian</div></div>
+        <div class="row"><div class="what">Codeforces <span>aricode2005</span></div><div class="val">Specialist</div></div>
+        <div class="row"><div class="what">CodeChef <span>max rating 1656 · aricode25</span></div><div class="val">3★</div></div>
+        <div class="row"><div class="what">Meta Hacker Cup 2025 <span>2711th of 13,779 in Round 1, qualified for Round 2</span></div><div class="val">Round 2</div></div>
+        <div class="row"><div class="what">OpenAimer, Srijan '26 <span>Code Club, Jadavpur University</span></div><div class="val">2nd runner-up</div></div>
+        <div class="row"><div class="what">WBJEE 2024 <span>General Merit Rank, ~98,000 candidates</span></div><div class="val">73</div></div>
+        <div class="row"><div class="what">JEE Advanced 2024 <span>All India Rank, ~250,000 candidates</span></div><div class="val">4,229</div></div>
+        <div class="row"><div class="what">JEE Main 2024 <span>All India Rank, ~1.1 million candidates</span></div><div class="val">5,165</div></div>
+        <div class="row"><div class="what">B.E. Computer Science &amp; Engineering <span>Jadavpur University, Kolkata · 2024–present</span></div><div class="val">9.51 CGPA</div></div>
+        <div class="row"><div class="what">Higher Secondary (AISSCE) <span>H.M. Education Centre, Hindmotor · CBSE X: 98.2%</span></div><div class="val">97.8%</div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap close" id="contact">
+    <p>Looking for a backend or AI engineering internship where the systems are real.</p>
+    <div class="contact">
+      <a href="mailto:aritraduttauttarpara@gmail.com">aritraduttauttarpara@gmail.com</a>
+      <a href="https://github.com/Aricode2005">GitHub</a>
+      <a href="https://www.linkedin.com/in/aritra-dutta-aa30872b7/">LinkedIn</a>
+      <a href="https://leetcode.com/u/aricode25/">LeetCode</a>
+      <a href="tel:+919051512833">+91 90515 12833</a>
+    </div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <span>Kolkata, India</span>
+  <span>Last updated September 2026</span>
+</footer>
+
+</body>
+</html>
